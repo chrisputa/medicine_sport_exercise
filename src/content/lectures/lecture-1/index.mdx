@@ -6,6 +6,7 @@ tags:
   - Lecture
 ---
 
+import Table from '../../../components/Table.astro';
 import { Note } from '../../../components/MarginNote/index.js';
 
 
@@ -59,13 +60,18 @@ The **Molecular Transducers of Physical Activity Consortium (MoTrPAC)** was esta
 
 Six-month-old male and female Fischer 344 rats were subjected to progressive treadmill endurance training for 1, 2, 4 or 8 weeks, with tissues collected 48 h after the last bout. Sex-matched sedentary controls were used as the comparator group.
 
+<Table>
+
 | Parameter | Outcome at 8 weeks |
 | --- | --- |
 | Aerobic capacity (V̇O₂max) | +18 % (males) / +16 % (females) |
 | Body fat percentage | −5 % (males); unchanged in females, but +4 % in sedentary controls |
 | Lean mass | No significant change |
 
-*Table 1. Phenotypic adaptations to 8 weeks of progressive endurance training in rats [5].*
+<Fragment slot="caption">
+Phenotypic adaptations to 8 weeks of progressive endurance training in rats [5].
+</Fragment>
+</Table>
 
 ### Scope of the Multi-Omic Atlas
 

@@ -6,6 +6,7 @@ tags:
   - Lecture
 ---
 
+import Table from '../../../components/Table.astro';
 import { Note } from '../../../components/MarginNote/index.js';
 
 
@@ -118,6 +119,8 @@ The IBD literature finds that **high-intensity interval training shows** measura
 
 A patient in stable remission tolerates a wider range of exercise prescriptions than a patient with mild active disease. The clinical task is **matching the exercise prescription to the disease state**:
 
+<Table>
+
 | Disease state | Suitable exercise prescription |
 | --- | --- |
 | Acute flare | Light activity, walking, breathing exercises; avoid vigorous bouts |
@@ -125,7 +128,10 @@ A patient in stable remission tolerates a wider range of exercise prescriptions 
 | Remission, low fitness | MICT + light resistance, gradual progression |
 | Remission, established fitness | MICT + HIIT + resistance training |
 
-*Table 1. Matching exercise prescription to IBD disease state (synthesised from [2] and Lecture 11).*
+<Fragment slot="caption">
+Matching exercise prescription to IBD disease state (synthesised from [2] and Lecture 11).
+</Fragment>
+</Table>
 
 The corresponding numerical prescriptions are detailed in Lecture 11.
 
@@ -169,13 +175,18 @@ The interconnected exercise-microbiome-immune pathway is one of the most active 
 
 The IBD-exercise literature reports clinically interpretable correlations between biomarkers and patient-reported outcomes [2]:
 
+<Table>
+
 | Outcome | Biomarker | Correlation |
 | --- | --- | --- |
 | Quality of Life | TNF-α | r ≈ 0.65 (inverse, biomarker reduction with QoL improvement) |
 | Fatigue Score | SCFA | r ≈ −0.60 (lower fatigue with higher SCFA) |
 | Quality of Life | SCFA | r ≈ −0.55 (higher QoL with higher SCFA) |
 
-*Table 2. Indicative correlation patterns between cytokine/SCFA biomarkers and patient-reported outcomes in IBD exercise studies (representative; magnitudes depend on study) [2].*
+<Fragment slot="caption">
+Indicative correlation patterns between cytokine/SCFA biomarkers and patient-reported outcomes in IBD exercise studies (representative; magnitudes depend on study) [2].
+</Fragment>
+</Table>
 
 ### Exercise Type Differences
 

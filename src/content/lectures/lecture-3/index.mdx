@@ -6,6 +6,7 @@ tags:
   - Lecture
 ---
 
+import Table from '../../../components/Table.astro';
 import { Note } from '../../../components/MarginNote/index.js';
 
 
@@ -30,6 +31,8 @@ The term *exerkine* is intentionally broader than *myokine* — it captures ever
 
 ### Source Tissues
 
+<Table>
+
 | Source tissue | Representative exerkines |
 | --- | --- |
 | Skeletal muscle | IL-6, IL-15, irisin, myostatin (suppressed), BDNF, FGF21 |
@@ -40,7 +43,10 @@ The term *exerkine* is intentionally broader than *myokine* — it captures ever
 | Cardiac muscle | ANP, BNP, FGF21 |
 | Immune cells | Soluble cytokines, extracellular vesicles |
 
-*Table 1. Major source tissues and representative exerkines (selected examples) [1, 2].*
+<Fragment slot="caption">
+Major source tissues and representative exerkines (selected examples) [1, 2].
+</Fragment>
+</Table>
 
 ### Communication Modes
 
@@ -64,13 +70,18 @@ The Kistner–Pedersen–Lieberman model [3] reframes muscle-derived IL-6 as an 
 2. **Energy liberation** — circulating IL-6 **upregulates lipolysis and gluconeogenesis**, mobilising fuel from adipose tissue and the liver.
 3. **Energy allocation** — IL-6 **increases energy uptake** into target tissues through enhanced insulin receptor sensitivity, GLUT4 expression and short-chain fatty acid transporter expression.
 
+<Table>
+
 | Phase | Tissue role | Effector mechanism |
 | --- | --- | --- |
 | Sensing | Skeletal muscle (myocyte) | Glycogen depletion → IL-6 transcription / release |
 | Liberation | Adipose tissue, liver | ↑ lipolysis, ↑ gluconeogenesis |
 | Allocation | Skeletal muscle, gut | ↑ insulin sensitivity, ↑ GLUT4, ↑ SCFA transporters |
 
-*Table 2. IL-6 as an energy allocator — the three-stage model of Kistner, Pedersen & Lieberman (2022) [3].*
+<Fragment slot="caption">
+IL-6 as an energy allocator — the three-stage model of Kistner, Pedersen & Lieberman (2022) [3].
+</Fragment>
+</Table>
 
 ### Why "Allocator" Rather Than "Pro-Inflammatory Cytokine"
 

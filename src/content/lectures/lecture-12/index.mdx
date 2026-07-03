@@ -6,6 +6,7 @@ tags:
   - Lecture
 ---
 
+import Table from '../../../components/Table.astro';
 import { Note } from '../../../components/MarginNote/index.js';
 
 
@@ -51,6 +52,8 @@ The exerkine framework is the connective tissue: it explains **how** muscle cont
 
 The simplest accurate map of exerkine signalling has skeletal muscle at the centre and emits signals to all major organs:
 
+<Table>
+
 | Sending tissue | Representative exerkine | Receiving tissue | Functional effect |
 | --- | --- | --- | --- |
 | Skeletal muscle | IL-6 | Liver, adipose, brain | Energy allocation, gluconeogenesis, lipolysis, satiety |
@@ -66,7 +69,10 @@ The simplest accurate map of exerkine signalling has skeletal muscle at the cent
 | Gut | SCFAs (microbial) | Immune system, liver | Barrier integrity, anti-inflammatory tone |
 | Cardiac muscle | ANP / BNP | Vascular, kidney | Volume regulation |
 
-*Table 1. Representative exerkines with sending tissue, receiving tissue, and functional effect (selected examples) [1, 2].*
+<Fragment slot="caption">
+Representative exerkines with sending tissue, receiving tissue, and functional effect (selected examples) [1, 2].
+</Fragment>
+</Table>
 
 ### Communication Distance and Mode
 

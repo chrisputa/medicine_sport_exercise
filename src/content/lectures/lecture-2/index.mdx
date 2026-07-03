@@ -6,6 +6,7 @@ tags:
   - Lecture
 ---
 
+import Table from '../../../components/Table.astro';
 import { Note } from '../../../components/MarginNote/index.js';
 
 
@@ -45,6 +46,8 @@ The mammalian timekeeping system is organised hierarchically [4]:
 
 ### Diurnal Rhythms Relevant to Exercise
 
+<Table>
+
 | Variable | Typical diurnal pattern |
 | --- | --- |
 | Core body temperature | Trough ~04:00–06:00, peak ~18:00–20:00 |
@@ -54,7 +57,10 @@ The mammalian timekeeping system is organised hierarchically [4]:
 | Muscle strength / power | Typically peaks late afternoon |
 | Insulin sensitivity | Higher in the morning than in the evening |
 
-*Table 1. Approximate diurnal pattern of variables relevant to exercise prescription. Values are population averages; individual chronotype shifts the curves.*
+<Fragment slot="caption">
+Approximate diurnal pattern of variables relevant to exercise prescription. Values are population averages; individual chronotype shifts the curves.
+</Fragment>
+</Table>
 
 ### Why This Matters for Exercise Prescription
 
@@ -90,6 +96,8 @@ Within the same Saner et al. study, a **high-intensity interval exercise (HIIE)*
 * **75-second active recovery** at 60 W between intervals.
 * Mean power per interval: **318 ± 53 W**; mean heart rate across the protocol: **156 ± 13 bpm**.
 
+<Table>
+
 | Phase | Duration | Intensity |
 | --- | --- | --- |
 | Warm-up | 3 min | 60 W |
@@ -97,7 +105,10 @@ Within the same Saner et al. study, a **high-intensity interval exercise (HIIE)*
 | Active recovery | 75 s | 60 W |
 | Repeats | 10 | — |
 
-*Table 2. HIIE counter-strategy to sleep loss (adapted from [3]).*
+<Fragment slot="caption">
+HIIE counter-strategy to sleep loss (adapted from [3]).
+</Fragment>
+</Table>
 
 ### Outcomes
 

@@ -6,6 +6,7 @@ tags:
   - Lecture
 ---
 
+import Table from '../../../components/Table.astro';
 import { Note } from '../../../components/MarginNote/index.js';
 
 
@@ -131,6 +132,8 @@ No single intensity metric captures all clinical situations. The ACSM 2011 posit
 * **Strengths.** Useful for prescribing types of activity (walking, cycling, swimming) using published MET tables.
 * **Limitations.** Population averages; less precise for individual prescription than HRR or RPE.
 
+<Table>
+
 | Intensity band | % HRmax | % HRR | RPE 6–20 | METs |
 | --- | --- | --- | --- | --- |
 | Light | 50–63 | 30–39 | 9–11 | < 3 |
@@ -138,7 +141,10 @@ No single intensity metric captures all clinical situations. The ACSM 2011 posit
 | Vigorous | 77–95 | 60–89 | 14–17 | 6–8.7 |
 | Very vigorous | ≥ 96 | ≥ 90 | ≥ 18 | ≥ 8.8 |
 
-*Table 1. Intensity bands by % HRmax, % HRR, RPE and METs. Approximate alignment after Garber et al. (ACSM 2011) [2].*
+<Fragment slot="caption">
+Intensity bands by % HRmax, % HRR, RPE and METs. Approximate alignment after Garber et al. (ACSM 2011) [2].
+</Fragment>
+</Table>
 
 ### Choosing the Anchor
 

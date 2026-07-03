@@ -6,6 +6,7 @@ tags:
   - Lecture
 ---
 
+import Table from '../../../components/Table.astro';
 import { Note } from '../../../components/MarginNote/index.js';
 
 
@@ -57,6 +58,8 @@ Critically, this exercise-induced IL-6 surge is **largely independent of TNF-α*
 
 ### The Cytokine Cascade in Time
 
+<Table>
+
 | Time after exercise onset | Dominant signal | Functional role |
 | --- | --- | --- |
 | 0–30 min | Catecholamines, glucagon | Fuel mobilisation, demargination of immune cells |
@@ -65,7 +68,10 @@ Critically, this exercise-induced IL-6 surge is **largely independent of TNF-α*
 | 2–24 h post | Cortisol (early peak, then decline) | Immunosuppressive, redistributive |
 | 24–72 h post | Adipokine/hepatokine shifts | Tissue-level metabolic adaptation |
 
-*Table 1. Approximate kinetic sequence of exerkines and immune mediators after a single bout of endurance exercise (synthesised from [1–3]).*
+<Fragment slot="caption">
+Approximate kinetic sequence of exerkines and immune mediators after a single bout of endurance exercise (synthesised from [1–3]).
+</Fragment>
+</Table>
 
 ---
 

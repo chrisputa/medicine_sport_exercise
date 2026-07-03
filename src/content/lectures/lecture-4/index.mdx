@@ -6,6 +6,7 @@ tags:
   - Lecture
 ---
 
+import Table from '../../../components/Table.astro';
 import { Note } from '../../../components/MarginNote/index.js';
 
 
@@ -53,6 +54,8 @@ Continuous glucose monitoring devices such as the **FreeStyle Libre 3** produce 
 
 ### Hormonal Regulation of Blood Glucose
 
+<Table>
+
 | Hormone | Source | Effect on glucose | Stimulus |
 | --- | --- | --- | --- |
 | Insulin | β-cells, pancreas | ↓ blood glucose; promotes uptake and storage | Hyperglycaemia |
@@ -64,7 +67,10 @@ Continuous glucose monitoring devices such as the **FreeStyle Libre 3** produce 
 | Catecholamines | Adrenal medulla, SNS | ↑ blood glucose; glycogenolysis | Acute stress, exercise |
 | Somatostatin | δ-cells | ↓ both insulin and glucagon | Local pancreatic |
 
-*Table 1. Major hormones regulating blood glucose. Adapted from clinical physiology references and integrated with the Fact-Sheets used in the Planetary Health OSCE 2024 [5].*
+<Fragment slot="caption">
+Major hormones regulating blood glucose. Adapted from clinical physiology references and integrated with the Fact-Sheets used in the Planetary Health OSCE 2024 [5].
+</Fragment>
+</Table>
 
 ### A Teaching Exercise
 
@@ -114,6 +120,8 @@ Of these, **AEE and NEAT** are the most modifiable. Habitually sedentary individ
 
 Obesity is **not a single condition**. Metabolic obesity in people with normal body weight (MONW), metabolically healthy obesity (MHO), and metabolically unhealthy obesity (MUO) differ in clinically meaningful ways [8].
 
+<Table>
+
 | Phenotype | BMI | Visceral fat | Insulin sensitivity | Cardiometabolic risk |
 | --- | --- | --- | --- | --- |
 | Lean, metabolically healthy | &lt;25 | Low | Preserved | Low |
@@ -121,7 +129,10 @@ Obesity is **not a single condition**. Metabolic obesity in people with normal b
 | Metabolically healthy obesity (MHO) | ≥30 | Variable | Largely preserved | Intermediate |
 | Metabolically unhealthy obesity (MUO) | ≥30 | High | Reduced | High |
 
-*Table 2. Phenotypes of obesity by anthropometric and metabolic criteria. Adapted from Pluta et al. [8].*
+<Fragment slot="caption">
+Phenotypes of obesity by anthropometric and metabolic criteria. Adapted from Pluta et al. [8].
+</Fragment>
+</Table>
 
 **Clinical implication.** Body mass alone is a poor proxy for cardiometabolic risk. Visceral adiposity, ectopic fat (especially hepatic, see Lecture 9), and physical fitness — particularly cardiorespiratory fitness (CRF) — together provide a more accurate stratification [3, 8].
 
@@ -142,12 +153,17 @@ A reproducible procedure is essential for clinical use [9]:
 
 Independent of weight, recommended waist circumference thresholds [9]:
 
+<Table>
+
 | Sex | Recommended | Substantially increased risk |
 | --- | --- | --- |
 | Men | < 94 cm (37 in) | ≥ 102 cm (40 in) |
 | Women | < 80 cm (31.5 in) | ≥ 88 cm (34.5 in) |
 
-*Table 3. Waist circumference thresholds for cardiometabolic risk.*
+<Fragment slot="caption">
+Waist circumference thresholds for cardiometabolic risk.
+</Fragment>
+</Table>
 
 **Practical insight.** A 10-minute consultation that includes blood pressure, waist circumference, fasting glucose, HbA1c and a brief activity history captures the bulk of modifiable cardiometabolic risk in primary care. Cardiorespiratory fitness should be added wherever feasible (see Lecture 5) [3].
 

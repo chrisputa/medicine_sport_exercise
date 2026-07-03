@@ -6,6 +6,7 @@ tags:
   - Lecture
 ---
 
+import Table from '../../../components/Table.astro';
 import { Note } from '../../../components/MarginNote/index.js';
 
 
@@ -83,6 +84,8 @@ Exercise reduces hepatic inflammatory tone through the same exerkine-mediated me
 
 ### A Quantitative Summary
 
+<Table>
+
 | Domain | Biomarker | Direction and approximate magnitude |
 | --- | --- | --- |
 | Liver | Liver fat (MRI-PDFF) | ↓ ≈ 2.85 % absolute (representative trials) |
@@ -94,7 +97,10 @@ Exercise reduces hepatic inflammatory tone through the same exerkine-mediated me
 | Fitness | V̇O₂max | ↑ ≈ 10–20 % |
 | Anthropometric | Waist circumference | ↓ |
 
-*Table 1. Key quantitative improvements observed with HIIT in MAFLD. Values are approximate from representative trials and reviews; magnitudes depend on the prescription, duration and baseline severity (synthesised from [2]).*
+<Fragment slot="caption">
+Key quantitative improvements observed with HIIT in MAFLD. Values are approximate from representative trials and reviews; magnitudes depend on the prescription, duration and baseline severity (synthesised from [2]).
+</Fragment>
+</Table>
 
 ### Why These Outcomes Matter
 
@@ -117,6 +123,8 @@ The most evidence-supported HIIT prescription in MAFLD trials is the **4 × 4 mi
 * **Frequency**: 3 sessions per week.
 * **Duration**: 8–12+ weeks for measurable hepatic and metabolic improvement.
 
+<Table>
+
 | Phase | Duration | Intensity |
 | --- | --- | --- |
 | Warm-up | 3 min | 60 % HRpeak |
@@ -126,7 +134,10 @@ The most evidence-supported HIIT prescription in MAFLD trials is the **4 × 4 mi
 | Sessions per week | 3 | — |
 | Total programme | 8–12+ weeks | — |
 
-*Table 2. Typical HIIT prescription for MAFLD (synthesised from [2]).*
+<Fragment slot="caption">
+Typical HIIT prescription for MAFLD (synthesised from [2]).
+</Fragment>
+</Table>
 
 ### Practical Considerations
 

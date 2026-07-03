@@ -6,6 +6,7 @@ tags:
   - Lecture
 ---
 
+import Table from '../../../components/Table.astro';
 import { Note } from '../../../components/MarginNote/index.js';
 
 
@@ -30,6 +31,8 @@ The **metabolic syndrome (MetS)** is a clustering of cardiometabolic risk factor
 
 Recent guidelines define the metabolic syndrome by the presence of **three or more** of the following criteria [1]:
 
+<Table>
+
 | Criterion | Threshold |
 | --- | --- |
 | Central obesity (waist circumference) | ≥ 102 cm (men) / ≥ 88 cm (women) — population-specific cut-offs apply |
@@ -38,7 +41,10 @@ Recent guidelines define the metabolic syndrome by the presence of **three or mo
 | Blood pressure | ≥ 130 / 85 mmHg or on antihypertensive therapy |
 | Fasting glucose | ≥ 100 mg/dL (5.6 mmol/L) or on glucose-lowering therapy |
 
-*Table 1. Criteria for the metabolic syndrome (selected from Dobrolowski et al. [1]).*
+<Fragment slot="caption">
+Criteria for the metabolic syndrome (selected from Dobrolowski et al. [1]).
+</Fragment>
+</Table>
 
 ### Management Principles
 
@@ -98,6 +104,8 @@ The clinical implication: prediabetes should be diagnosed, communicated and trea
 
 Sandforth and colleagues [3], in a post-hoc analysis of the Prediabetes Lifestyle Intervention Study (PLIS), examined the mechanisms by which weight loss produces remission of prediabetes. The headline finding: **remission is best predicted by reduction in visceral adipose tissue (VAT)**, not by reduction in body weight per se.
 
+<Table>
+
 | Predictor | Association with prediabetes remission |
 | --- | --- |
 | Reduction in total body weight | Significant but moderate |
@@ -106,7 +114,10 @@ Sandforth and colleagues [3], in a post-hoc analysis of the Prediabetes Lifestyl
 | Increase in insulin sensitivity | Mediating mechanism |
 | Increase in cardiorespiratory fitness | Independent protective predictor |
 
-*Table 2. Mechanisms of weight-loss-induced prediabetes remission (Sandforth et al. [3]).*
+<Fragment slot="caption">
+Mechanisms of weight-loss-induced prediabetes remission (Sandforth et al. [3]).
+</Fragment>
+</Table>
 
 ### Why VAT Matters
 

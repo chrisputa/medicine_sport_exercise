@@ -6,6 +6,7 @@ tags:
   - Lecture
 ---
 
+import Table from '../../../components/Table.astro';
 import { Note } from '../../../components/MarginNote/index.js';
 
 
@@ -68,6 +69,8 @@ The same review highlights **stair climbing** as a translationally attractive mo
 
 The benefits documented in randomised and observational designs include [1, 2, 3]:
 
+<Table>
+
 | Outcome | Effect of exercise snacks |
 | --- | --- |
 | V̇O₂peak | Measurable improvement (+5–15 % in 6 weeks) |
@@ -77,7 +80,10 @@ The benefits documented in randomised and observational designs include [1, 2, 3
 | Resting heart rate | Reduced |
 | Self-reported energy / mood | Improved |
 
-*Table 1. Documented cardiometabolic effects of exercise snacks (selected literature).*
+<Fragment slot="caption">
+Documented cardiometabolic effects of exercise snacks (selected literature).
+</Fragment>
+</Table>
 
 ---
 
@@ -93,6 +99,8 @@ Randomised trials demonstrate that **three short bouts of stair climbing per day
 
 A typical exercise-snack prescription based on stair climbing might be:
 
+<Table>
+
 | Variable | Recommendation |
 | --- | --- |
 | Bouts per day | 3 |
@@ -101,7 +109,10 @@ A typical exercise-snack prescription based on stair climbing might be:
 | Spacing | Morning, midday, late afternoon |
 | Recovery | Normal sedentary or light activity between bouts |
 
-*Table 2. Practical exercise-snack prescription using stair climbing.*
+<Fragment slot="caption">
+Practical exercise-snack prescription using stair climbing.
+</Fragment>
+</Table>
 
 **Practical insight.** A patient who reports "no time for exercise" can nearly always find three one-minute opportunities in a working day. The intervention is dose-conserving, equipment-free, and immediately implementable.
 
